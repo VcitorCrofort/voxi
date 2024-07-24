@@ -21,8 +21,7 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
         ConnectionRate(:call="call")
   .vector-horizontal
   .footer
-    a(href="https://voximplant.com" target="_blank") Help
-    a(href="https://voximplant.com" target="_blank") Voximplant.com
+    a(href="https://www.anla.gov.co" target="_blank") anla.gov.co
 </template>
 
 <script lang="ts">

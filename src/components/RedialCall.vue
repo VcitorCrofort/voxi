@@ -1,6 +1,6 @@
 <template lang="pug">
 .redial-call
-  .text Press the button to call
+  .text Presiona para comunicarte con un asesor
   .call-button(@click="redial" tabindex=0)
     svg.call-key(width='44' height='44')
       use(:href="'/icons.svg#call-button'")
