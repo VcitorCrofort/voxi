@@ -102,7 +102,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #ffffff;
     opacity: 0.2;
     border-radius: 12px;
   }

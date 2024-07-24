@@ -160,9 +160,11 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
     width: 350px;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
+    
     & >>> .sui-button {
       height: 64px;
       border-radius: 0;
+      background-color: #62A542;
     }
     & >>> .sui-icon {
       --sui-icon-color: #ffffff !important;
@@ -174,7 +176,7 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
     height: 64px;
     left: 175px;
     top: 0;
-    border-right: 1px solid #8b55ff;
+    border-right: 1px solid #62A542;
   }
   .call-state {
     position: relative;
@@ -225,7 +227,7 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
     padding: 8px 16px;
     font-size: 12px;
     line-height: 16px;
-    color: #662eff;
+    color: #62A542;
     box-sizing: border-box;
   }
 </style>

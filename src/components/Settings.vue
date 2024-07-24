@@ -104,7 +104,7 @@
     }
     & .sui-opened {
       & >>> .sui-arrow-icon {
-        --sui-icon-color: #662eff !important;
+        --sui-icon-color: #ffffff !important;
       }
     }
   }
