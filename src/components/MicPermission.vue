@@ -3,7 +3,7 @@
   .blocked-access(v-if="blockedAccess")
   .info
     .icon
-    .text Please allow access to your microphone for making a call online
+    .text Permita el acceso a su micrófono para realizar una llamada en línea
 </template>
 
 <script lang="ts">

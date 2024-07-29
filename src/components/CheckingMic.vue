@@ -84,6 +84,7 @@
     & .sui-button {
       padding: 6px 12px;
       max-width: initial;
+      background-color: #62A542;
     }
   }
   .text {

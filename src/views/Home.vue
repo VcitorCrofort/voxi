@@ -4,7 +4,6 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
   .settings-panel
     .vector
     Button(size="s" mode="primary" width="fill-container" icon="ic20-settings" @click="showSettings=true") Settings
-    Button(size="s" mode="primary" width="fill-container" icon="ic20-mic" @click="startTestMic") Checking
   .call-state
     Timer(:callState="callState" v-if="callState===CallState.CONNECTED")
     Settings(v-if="showSettings" @update:closeSettings="showSettings=false" :call="call")
@@ -160,23 +159,30 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
     width: 350px;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
+    background-color: #62A542;
     
     & >>> .sui-button {
       height: 64px;
       border-radius: 0;
       background-color: #62A542;
     }
+    & >>> .sui-button:hover {
+      height: 64px;
+      border-radius: 0;
+      background-color: #8dd691;
+    }
     & >>> .sui-icon {
       --sui-icon-color: #ffffff !important;
     }
   }
+
   .vector {
     position: absolute;
     width: 0;
     height: 64px;
     left: 175px;
     top: 0;
-    border-right: 1px solid #62A542;
+    
   }
   .call-state {
     position: relative;
@@ -227,7 +233,7 @@ MicPermission(v-if="!isMicAccessGranted" :accessDenied="accessDenied")
     padding: 8px 16px;
     font-size: 12px;
     line-height: 16px;
-    color: #62A542;
+    
     box-sizing: border-box;
   }
 </style>

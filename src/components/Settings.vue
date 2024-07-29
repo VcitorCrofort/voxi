@@ -130,8 +130,10 @@
     margin-top: 24px;
     display: flex;
     width: 150px;
+    background-color: #62A542;
     & .sui-button {
       margin-right: 8px;
+      background-color: #62A542;
     }
   }
 </style>
